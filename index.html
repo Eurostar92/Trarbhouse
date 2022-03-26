@@ -1,13 +1,110 @@
 <!DOCTYPE html>
 
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif
+  }
+#Basis {
+}
+
+#aEbene {
+  color: white;
+  background-color: rgb(53, 53, 53);
+  display: block;
+  width: 1500px;
+  height: 500px;
+  top: 125px;
+  left:250px;
+  position:absolute;
+  }
+
+#Dreieck {
+  width: 0;
+  height: 0;
+  left: 250px;
+  border-left: 1250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 100px solid rgb(53, 53, 53);
+  position: absolute;
+  }
+
+#navigation{
+  background-color: rgb(53, 53, 53);
+  left: 300px;
+  top: 250px;
+  position:absolute;
+  z-index: 1;
+}
+
+#navigation a {
+  color: white;
+  display: block;
+  padding: 20px;
+  
+}
+
+#bEbene {
+  background-color: rgb(76, 76, 216);
+  display:block;
+  width: 1300px;
+  height: 500px;
+  top: 70px;
+  left: 500px;
+  position: absolute;
+}
+
+#Programm {
+  display: block;
+  align-items: center;
+  position: absolute;
+  color: white;
+  left: 500px;
+  top: 700px;
+}
+
+#LES_TRARBIBIS{
+  display: block;
+  align-items: center;
+  position: absolute;
+  color: white;
+  left: 500px;
+  top: 2000px;
+}
+
+</style>
+
 <html>
   <head<
-  <title> Trarb House </title>
+    <title> Trarb House </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"
   </head>
-  <body bgcolor=8E8E8E>
-    <h1> Hallo Welt! Ich bin ein Berliner</h1>
-    <img src="images/trarboum.jpg" alt="Alt-Text">
-    <p>
-    </p>
+  <body bgcolor=000000>
+    <dic id="Basis">
+      <div id="aEbene"></div>
+      <div id="Dreieck"></div>
+      <div id="navigation">
+        <p>
+        <a href="#Programm">Programm</a>
+        </p>
+        <a href="#LES_TRARBIBIS">LES TRARBIBIS</a>
+      </div>
+    </dic>
+   
+    <div id="bEbene"></div>
+
+    <dic id="Programm">
+      <h1> Programm </h1>
+      <img src="images/trarboum.jpg" alt="Alt-Text">
+    </dic>
+
+    <dic id="LES_TRARBIBIS">
+      <h1> LES TRABIBIS </h1>
+      <p>§1 TGB - Der Tisch fällt nicht</p>
+      <p>$2 TGB - Bewohner mit einem gültigen Mietvertrag tragen den Titel Trarbibi</p>
+      <p>§3 TGB - Zeitungen und Zeitschriften sind nach beendigung des Lesevorgangs in Ihren Ausgangszustand zu versetzen</p>
+      <p> 
+
+      </p>
+    </dic>
 </body>
 </html>
