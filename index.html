@@ -12,28 +12,40 @@
   background-color: rgb(53, 53, 53);
   display: block;
   width: 1500px;
-  height: 500px;
+  height: 1500px;
   top: 125px;
   left:250px;
-  position:absolute;
+  position:fixed;
   }
 
-#Dreieck {
+#Dreieck_oben {
   width: 0;
   height: 0;
   left: 250px;
   border-left: 1250px solid transparent;
   border-right: 250px solid transparent;
   border-bottom: 100px solid rgb(53, 53, 53);
-  position: absolute;
+  position: fixed;
+  }
+
+#Dreieck_unten {
+  width: 0;
+  height: 0;
+  left: 250px;
+  top: 470px;
+  border-left: 250px solid transparent;
+  border-right: 1250px solid transparent;
+  border-bottom: 100px solid rgb(53, 53, 53);
+  position:absolute;
+  z-index: 2;
   }
 
 #navigation{
-  background-color: rgb(53, 53, 53);
+  background-color: inherit;
   left: 300px;
   top: 250px;
   position:absolute;
-  z-index: 1;
+  
 }
 
 #navigation a {
@@ -51,6 +63,8 @@
   top: 70px;
   left: 500px;
   position: absolute;
+  index: 2;
+  
 }
 
 #Programm {
@@ -81,7 +95,9 @@
   <body bgcolor=000000>
     <dic id="Basis">
       <div id="aEbene"></div>
-      <div id="Dreieck"></div>
+      <div id="Dreieck_oben"></div>
+      <div id="Dreieck_unten"></div>
+      <div id="Krieg"></div>
       <div id="navigation">
         <p>
         <a href="#Programm">Programm</a>
@@ -94,7 +110,7 @@
 
     <dic id="Programm">
       <h1> Programm </h1>
-      <img src="images/trarboum.jpg" alt="Alt-Text">
+      <img src="C:/Users/Kevin Kiel/Downloads/trarboum.jpg" alt="Alt-Text">
     </dic>
 
     <dic id="LES_TRARBIBIS">
