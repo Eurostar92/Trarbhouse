@@ -9,7 +9,7 @@
 
 #aEbene {
   color: white;
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(38, 37, 37);
   display: block;
   width: 1500px;
   height: 1500px;
@@ -24,7 +24,7 @@
   left: 250px;
   border-left: 1250px solid transparent;
   border-right: 250px solid transparent;
-  border-bottom: 100px solid rgb(53, 53, 53);
+  border-bottom: 100px solid rgb(38, 37, 37);
   position: fixed;
   }
 
@@ -35,9 +35,9 @@
   top: 470px;
   border-left: 250px solid transparent;
   border-right: 1250px solid transparent;
-  border-bottom: 100px solid rgb(53, 53, 53);
+  border-bottom: 100px solid rgb(38, 37, 37);
   position:absolute;
-  z-index: 2;
+  z-index: 3;
   }
 
 #navigation{
@@ -56,17 +56,52 @@
 }
 
 #bEbene {
-  background-color: rgb(76, 76, 216);
+  background-color: rgb(12, 124, 188);
   display:block;
   width: 1300px;
   height: 500px;
   top: 70px;
   left: 500px;
   position: absolute;
-  index: 2;
+  z-index:1;
+}
+#Garden{
+  display: block;
+  align-items: center;
+  position: absolute;
+  left: 1020px;
+  top: 70px;
+  z-index: 2;
+}
+
+#Mitbewohner{
   
 }
 
+#Mitbewohner a {
+  color: rgb(229, 109, 174);
+  font-size:35px;
+  display: block;
+  padding: 15px;
+  background-color: inherit;
+  left: 550px;
+  top: 150px;
+  position:absolute;
+  z-index: 3;
+  }
+
+#Mitbewohner b {
+  color: rgb(51, 49, 49);
+  font-size:25px;
+  display: block;
+  padding: 10px;
+  background-color: inherit;
+  left: 700px;
+  top: 220px;
+  position:absolute;
+  z-index: 3;
+  }
+  
 #Programm {
   display: block;
   align-items: center;
@@ -97,12 +132,20 @@
       <div id="aEbene"></div>
       <div id="Dreieck_oben"></div>
       <div id="Dreieck_unten"></div>
-      <div id="Krieg"></div>
+      <div id="Garden">
+        <img src="images/Garden.jpg" alt="Alt-Text">
+      </div>
       <div id="navigation">
         <p>
         <a href="#Programm">Programm</a>
         </p>
         <a href="#LES_TRARBIBIS">LES TRARBIBIS</a>
+      </div>
+      <div id="Mitbewohner">
+    <p>
+      <a>Trabibi des Monats März 2022:</a>
+    </p>
+      <b>Kev The Magic</b>
       </div>
     </dic>
    
@@ -114,8 +157,7 @@
     </dic>
 
     <dic id="LES_TRARBIBIS">
-       <h1> Code CIVIL DES TRABIBIS </h1>
-      <p>§0 CCT - Ein Kreis hat kein Anfang und kein Ende.</p>
+      <h1> Code CIVIL DES TRABIBIS </h1>
       <p>§1 CCT - Am Anfang war das Wort.</p>
       <p>§2 CCT - Aus dem Wort erwuchs der Baum des Lebens.</p>
       <p>§3 CCT - Der Baum besteht aus drei Stämml*inngen, die den Tisch des Wortes tragen.</p>
@@ -123,7 +165,6 @@
       <p>§5 CCT - Der Tisch fällt nicht.</p>
       <p>$6 CCT - Wackelt der Tisch, stüzt das Wort in der Zeit</p>
       <p>§7 CCT - Zeitungen und Zeitschriften sind nach beendigung des Lesevorgangs in Ihren Ausgangszustand zu versetzen</p>
-      <p>§0 CCT - Ein Kreis hat kein Anfang und kein Ende.</p>
     </dic>
 </body>
 </html>
